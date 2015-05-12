@@ -14,6 +14,9 @@ public :
 	void add(int a,int b){
 		cout<<"a+b="<<a+b<<endl;
 	}
+	void minus(int a,int b){
+		cout<<"a-b="<<a-b<<endl;
+	}
 };
 
 int main()
@@ -25,6 +28,8 @@ int main()
 	calculator.display(); cin>>option;
 	if(option==1)
 		calculator.add(a,b);
+	else if(option==2)
+		calculator.minus(a,b);
 	else
 		cout<<"ㄲㅈ"<<endl;
 	return 0;
