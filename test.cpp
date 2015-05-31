@@ -13,28 +13,28 @@ public :
 		cout<<"what is your option? :";
 	}
 
-	void add(int a,int b){
+	void add(double a,double b){
 		cout<<"a+b="<<a+b<<endl;
 	}
-	void minus(int a,int b){
+	void minus(double a,double b){
 		cout<<"a-b="<<a-b<<endl;
 	}
-	void nanugi(int a, int b){
+	void nanugi(double a, double b){
 		if(b==0){
-			cout<<"0으로 나눌 수 없음!"<<endl;
+			cout<<"you can't divide by 0"<<endl;
 		}
 		else{
-			cout<<"a/b="<<(double)a/b<<endl;
+			cout<<"a/b="<<a/b<<endl;
 		}
 	}
-	void gobhagi(int a, int b){
+	void gobhagi(double a, double b){
 		cout<<"axb="<<a*b<<endl;
 	}
 };
 
 int main()
 {
-	int a,b;
+	double a,b;
 	int option;
 	calcul calculator;
 	cout<<"input two numbers : "; cin>>a>>b;
@@ -48,6 +48,6 @@ int main()
 	else if(option==4)
 		calculator.gobhagi(a,b);
 	else
-		cout<<"ㄲㅈ"<<endl;
+		cout<<"wrong option"<<endl;
 	return 0;
 }
