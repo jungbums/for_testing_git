@@ -10,6 +10,7 @@ public :
 		cout<<"2.minus"<<endl;
 		cout<<"3.nanugi"<<endl;
 		cout<<"4.gobhagi"<<endl;
+		cout<<"5.modulor"<<endl;
 		cout<<"what is your option? :";
 	}
 
@@ -28,7 +29,10 @@ public :
 		}
 	}
 	void gobhagi(double a, double b){
-		cout<<"axb="<<a*b<<endl;
+		cout<<"axb= "<<a*b<<endl;
+	}
+	void modulor(int a, int b){
+		cout<<"a mod b = "<<a%b<<endl;
 	}
 };
 
@@ -47,6 +51,8 @@ int main()
 		calculator.nanugi(a,b);
 	else if(option==4)
 		calculator.gobhagi(a,b);
+	else if(option==5)
+		calculator.modulor((int)a,(int)b);
 	else
 		cout<<"wrong option"<<endl;
 	return 0;
